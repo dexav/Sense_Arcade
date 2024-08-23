@@ -27,6 +27,7 @@ Das andere Spiel ist ein Reaktion-tester, wo man seine Reaktionszeit herausfinde
 |3|qulität|muss|Als User will ich, dass das UI simpel und einfach gestaltet ist, damit auch eine Person die keine Ahnung herausfindet wie man navigiert. |
 |4|funktional|muss|Als User will ich, dass im Reaktiontester die Zeit, wo es von Rot auf Grün wechselt, jedes mal anders ist, damit man nicht rechnen kann wann man auf dem Bildschirm drücken muss. |
 |5|funktional | muss | Als User will ich, dass es nicht nur einen Test von Rot auf Grün gibt, sondern auch Variationen gibt von diesem Test, damit man sieht wo man am stärksten ist beim Reagieren.|
+|6| qualität  | muss | Als User will ich, dass beide Spiele auf einer Seite integriert werden, damit man nicht eine komplett andere Seite öffnen muss, wenn man das andere Spiel spielen will.|
 
 
 
