@@ -22,8 +22,11 @@ Das andere Spiel ist ein Reaktion-tester, wo man seine Reaktionszeit herausfinde
 
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
-| 1    |                 |      | Als ein 🤷‍♂️ möchte ich 🤷‍♂️, damit 🤷‍♂️ |
-| ...  |                 |      |                                    |
+| 1    |funktional       | muss | Als User will ich, dass das Fang-Spiel einen Timer hat, der runterzählt, damit man nur in einer bestimmten Zeit spielen kann und nicht unendlich.                                 |
+| 2    |funktional        | muss | Als User will ich, dass im Fang-Spiel die Bilder die aufpoppen, nach einer Zeit mehr wird, damit man nicht warten muss bis man ein Bild gedrückt hat.                         |
+|3|qulität|muss|Als User will ich, dass das UI simpel und einfach gestaltet ist, damit auch eine Person die keine Ahnung herausfindet wie man navigiert. |
+|4|funktional|muss|Als User will ich, dass im Reaktiontester die Zeit, wo es von Rot auf Grün wechselt, jedes mal anders ist, damit man nicht rechnen kann wann man auf dem Bildschirm drücken muss. |
+|5|funktional | muss | Als User will ich, dass es nicht nur einen Test von Rot auf Grün gibt, sondern auch Variationen gibt von diesem Test, damit man sieht wo man am stärksten ist beim Reagieren.|
 
 
 
