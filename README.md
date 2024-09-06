@@ -4,9 +4,9 @@ Nursiwat Xavier
 
 | Datum | Version | Zusammenfassung                                              |
 | ----- | ------- | ------------------------------------------------------------ |
-|       | 0.0.1   | ✍️ Jedes Mal, wenn Sie an dem Projekt arbeiten, fügen Sie hier eine neue Zeile ein und beschreiben in *einem* Satz, was Sie erreicht haben. |
-|       | ...     |                                                              |
-|       | 1.0.0   |                                                              |
+| 23/08/2024       | 0.0.1   | Ich habe das Projekt angefangen, die HTML/CSS Grundstruktur fertiggestellt und auf GitHub alles eingerichtet. |
+| 30/08/2024      | 0.0.2     | Ich habe angefangen mit dem Fangspiel zu implementieren. Ich bin aber nicht weit gekommen, also muss ich dieses Arbeitspaket auf nächste Woche veschieben um daran weiter zu arbeiten.                                                             |
+| 06/09/2024      |0.0.3   |  Ich habe die Grundfunktion des Fangspiels fertig implementiert. Der Highscore funktioniert noch nicht, also muss ich das auch auf nächste Woche verschieben.                                                            |
 
 ## 1 Informieren
 
@@ -66,9 +66,10 @@ Total:  1080 min / 18 h
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
 | 1.A  |  23/08/2024     |Xavier Nursiwat           | 90 min              |  110 min                 |
-| ...  |       |           |               |                   |
+| 2.A  |  30/08/2024 + 06/09/2024     | Xavier Nursiwat             | 135min              |    300 min               |
 
-✍️ Tragen Sie jedes Mal, wenn Sie ein Arbeitspaket abschließen, hier ein, wie lang Sie effektiv dafür hatten.
+
+
 
 ## 5 Kontrollieren
 
