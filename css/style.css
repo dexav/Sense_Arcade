@@ -1,60 +1,56 @@
-*{
-    padding: 0;
-    margin: 0;
-    --back: #906EEF;
-    --reactBack: #E21414;
-
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0;
+  margin: 0;
+  --back: #906eef;
+  --reactBack: #e21414;
 }
-main{
-    background-color: var(--back);
+main {
+  background-color: var(--back);
 }
 .selectGame {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    height: 100vh;
-    list-style: none;
-    border: black 1px solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  height: 100vh;
+  list-style: none;
+  border: black 1px solid;
 }
 
-.gameButton{
-   
-    padding: 10px;
-    margin: 10px;
-    border-radius: 10px;
-    cursor: pointer;
+.gameButton {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
 }
 
-
-#centerCatBlock{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    position: relative;
-    bottom: 49%;
+#centerCatBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  bottom: 49%;
 }
-#centerReactBlock{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
-    position: relative;
-    bottom: 49%;
+#centerReactBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  position: relative;
+  bottom: 49%;
 }
-.catchCatBlock{
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    position: relative;
-    bottom: 49%;
-    height: 100vh;
-    width: 100vw;
+.catchCatBlock {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  position: relative;
+  bottom: 49%;
+  height: 100vh;
+  width: 100vw;
 }
-
 
 #catchCatImage img {
-    position: absolute;  /* Stelle sicher, dass das Bild absolut positioniert ist */
-    cursor: pointer;     /* Zeige einen Zeiger an, wenn man über das Bild fährt */
+  position: absolute; /* Stelle sicher, dass das Bild absolut positioniert ist */
+  cursor: pointer; /* Zeige einen Zeiger an, wenn man über das Bild fährt */
 }

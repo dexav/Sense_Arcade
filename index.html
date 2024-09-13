@@ -1,39 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
-    
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+
     <title>Sense Arcade</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <ul class="selectGame">            
-            <li><button class="gameButton" id="catchCatGo">Fang-Spiel</button></li>
-            <li><button class="gameButton" id="reactionGo">Reaktionstest</button></li>
+      <ul class="selectGame">
+        <li><button class="gameButton" id="catchCatGo">Fang-Spiel</button></li>
+        <li>
+          <button class="gameButton" id="reactionGo">Reaktionstest</button>
+        </li>
+      </ul>
 
-        </ul>
-
-        <div class="catchCatBlock">
-            <div id="catchHighscore">Score: 0</div>
-            <div id="catchCatImage"><img src="/img/jeromeFortnite.png" alt=""></div>
-            <div id="centerCatBlock"></div>
-            <div id="catchBack"><button><a href="#Home">back</a></button></div>
-            <div id="catchStart"><button>Start</button></div>
+      <div class="catchCatBlock">
+        <div id="catchScore">Score: 0</div>
+        <div id="catchCatImage">
+          <img src="/img/jeromeFortnite.png" alt="" />
         </div>
-
-        <div class="reactionBlock">
-            <div id="reactionHighscore">Highscore</div>
-            <div id="reactionBack"><button><a href="#Home">back</a></button></div>
-            <div id="centerReactBlock"></div>
-            <div id="reactStart"><button>Start</button></div>
+        <div id="centerCatBlock"></div>
+        <div id="catchBack">
+          <button><a href="#Home">back</a></button>
         </div>
+        <div id="catchStart"><button>Start</button></div>
+        <p id="catchHighscore">Highscore: 0</p>
+        <p id="catchTimer">Time: 30</p>
+      </div>
 
+      <div class="reactionBlock">
+        <div id="reactionHighscore">Highscore</div>
+        <div id="reactionBack">
+          <button><a href="#Home">back</a></button>
+        </div>
+        <div id="centerReactBlock"></div>
+        <div id="reactStart"><button>Start</button></div>
+      </div>
     </main>
- 
-</body>
-<script src="/js/catchCat.js"></script> 
-<script src="/js/script.js"></script>   
-<script src="/js/reactionGame.js"></script>
+  </body>
+  <script src="/js/catchCat.js"></script>
+  <script src="/js/script.js"></script>
+  <script src="/js/reactionGame.js"></script>
 </html>
