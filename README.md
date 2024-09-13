@@ -7,6 +7,7 @@ Nursiwat Xavier
 | 23/08/2024       | 0.0.1   | Ich habe das Projekt angefangen, die HTML/CSS Grundstruktur fertiggestellt und auf GitHub alles eingerichtet. |
 | 30/08/2024      | 0.0.2     | Ich habe angefangen mit dem Fangspiel zu implementieren. Ich bin aber nicht weit gekommen, also muss ich dieses Arbeitspaket auf nächste Woche veschieben um daran weiter zu arbeiten.                                                             |
 | 06/09/2024      |0.0.3   |  Ich habe die Grundfunktion des Fangspiels fertig implementiert. Der Highscore funktioniert noch nicht, also muss ich das auch auf nächste Woche verschieben.                                                            |
+|13/09/2024|0.1.0| Fangspiel wurde komplett fertig implementiert. Heisst Highscore, UI wurde noch erstellt. |
 
 ## 1 Informieren
 
@@ -67,6 +68,11 @@ Total:  1080 min / 18 h
 | ---- | ----- | --------- | ------------- | ----------------- |
 | 1.A  |  23/08/2024     |Xavier Nursiwat           | 90 min              |  110 min                 |
 | 2.A  |  30/08/2024 + 06/09/2024     | Xavier Nursiwat             | 135min              |    300 min               |
+|2.B |  13/09/2024   | Xavier Nursiwat             | 45 min            |    100min               |
+| 3.A  | 06/09/2024        | Xavier Nursiwat          | 90 min       |120 min         |
+| 3.B  | 06.09.2024        | Xavier Nursiwat          |  90 min     | 90 min              |
+
+
 
 
 
