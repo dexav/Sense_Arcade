@@ -1,6 +1,6 @@
 let score = 0;
 let timerInterval;
-const catchCatBlock = document.querySelector(".catchCatBlock"); // Area catch Game
+const catchCatBlock = document.querySelector(".catchCatBlock");
 const catScore = document.getElementById("catchScore");
 const catImage = document.getElementById("catchCatImage");
 const catchHighscore = document.getElementById("catchHighscore");
@@ -24,7 +24,7 @@ function catchGame() {
 }
 
 function startCatchGame() {
-  let gameTime = 5;
+  let gameTime = 30;
   timer.textContent = "Time: " + gameTime;
   catScore.textContent = "Score: " + score;
   catchGame();

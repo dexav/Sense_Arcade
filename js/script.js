@@ -27,12 +27,10 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-document
-  .querySelectorAll("#catchBack button, #reactionBack button")
-  .forEach((button) => {
-    button.addEventListener("click", () => {
-      document.querySelector(".catchCatBlock").style.display = "none";
-      document.querySelector(".reactionBlock").style.display = "none";
-      document.querySelector(".selectGame").style.display = "flex";
-    });
+document.querySelectorAll("#catchBack, #reactionBack").forEach((button) => {
+  button.addEventListener("click", () => {
+    document.querySelector(".catchCatBlock").style.display = "none";
+    document.querySelector(".reactionBlock").style.display = "none";
+    document.querySelector(".selectGame").style.display = "flex";
   });
+});

@@ -2,8 +2,16 @@
   font-family: Arial, Helvetica, sans-serif;
   padding: 0;
   margin: 0;
-  --back: #906eef;
+  --back: #7c93c3;
   --reactBack: #e21414;
+  text-decoration: none;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
 }
 main {
   background-color: var(--back);
@@ -40,17 +48,54 @@ main {
   position: relative;
   bottom: 49%;
 }
+/* CATCH GAME SECTOIN*/
 .catchCatBlock {
   display: flex;
-  justify-content: center;
   flex-direction: row;
-  position: relative;
-  bottom: 49%;
+  align-items: top;
+  justify-content: center;
   height: 100vh;
-  width: 100vw;
+  gap: 20px;
 }
 
 #catchCatImage img {
   position: absolute; /* Stelle sicher, dass das Bild absolut positioniert ist */
   cursor: pointer; /* Zeige einen Zeiger an, wenn man über das Bild fährt */
 }
+#catchBack a,
+#catchStart {
+  background-color: #55679c;
+  border-radius: 28px;
+  height: 2vh;
+  border: 1px solid #1e2a5e;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 17px;
+  padding: 16px 31px;
+  text-decoration: none;
+}
+#catchBack a:hover,
+#catchStart:hover {
+  background-color: #394876;
+}
+
+#catchHighscore,
+#catchTimer,
+#catchScore {
+  background-color: #ffffff;
+  border: 1px solid #1e2a5e;
+  border-radius: 10px;
+  padding: 10px 20px;
+  font-size: 20px;
+  color: #1e2a5e;
+  text-align: center;
+  width: 200px;
+  height: 2vh;
+}
+
+#catchHighscore {
+  margin-bottom: 20px;
+}
+/* CATCH GAME SECTOIN*/
