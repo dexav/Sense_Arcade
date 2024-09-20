@@ -1,6 +1,7 @@
 let score = 0;
 let timerInterval;
-const catchCatBlock = document.querySelector(".catchCatBlock"); // Area catch Game
+
+const catchCatBlock = document.querySelector(".catchCatBlock");
 const catScore = document.getElementById("catchScore");
 const catImage = document.getElementById("catchCatImage");
 const catchHighscore = document.getElementById("catchHighscore");
@@ -14,8 +15,9 @@ function catchGame() {
   const areaHeight = catchCatBlock.clientHeight; // Höhe des Fangspiel-Bereichs
 
   // Generiere eine zufällige Position innerhalb des Fangspiel-Bereichs
-  const randomX = Math.random() * (areaWidth - 200); // 100 ist die geschätzte Bildbreite
-  const randomY = Math.random() * (areaHeight - 200); // 100 ist die geschätzte Bildhöhe
+  const randomX = Math.random() * (areaWidth - 200); 
+  const randomY = Math.random() * (areaHeight - 200); 
+
 
   // Setze die Position des Bildes
   catImage.style.position = "absolute"; // Stelle sicher, dass das Bild absolut positioniert ist
@@ -24,7 +26,7 @@ function catchGame() {
 }
 
 function startCatchGame() {
-  let gameTime = 5;
+  let gameTime = 30;
   timer.textContent = "Time: " + gameTime;
   catScore.textContent = "Score: " + score;
   catchGame();
