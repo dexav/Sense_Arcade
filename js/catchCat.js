@@ -1,5 +1,6 @@
 let score = 0;
 let timerInterval;
+
 const catchCatBlock = document.querySelector(".catchCatBlock");
 const catScore = document.getElementById("catchScore");
 const catImage = document.getElementById("catchCatImage");
@@ -16,6 +17,7 @@ function catchGame() {
   // Generiere eine zufällige Position innerhalb des Fangspiel-Bereichs
   const randomX = Math.random() * (areaWidth - 200); 
   const randomY = Math.random() * (areaHeight - 200); 
+
 
   // Setze die Position des Bildes
   catImage.style.position = "absolute"; // Stelle sicher, dass das Bild absolut positioniert ist
