@@ -55,26 +55,43 @@ main {
   cursor: pointer; /* Zeige einen Zeiger an, wenn man über das Bild fährt */
 }
 
-/*Styling for reactiongame*/
+/* Styling for reactiongame */
 .reactionBlock {
   display: flex;
   background-color: var(--back);
   justify-content: center;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   position: relative;
-  bottom: 49%;
   height: 100vh;
   width: 100vw;
 }
+
 #reactionGameArea {
   display: flex;
   background-color: var(--reactBack);
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  position: relative;
-  bottom: 15%;
   height: 60vh;
   width: 70vw;
+  position: relative;
+}
+
+#startReactionButton,
+#reactionBack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  height: 10vh;
+  width: 10vw;
+}
+
+#startReactionButton {
+  bottom: -20%; /* Moves the Start button below the game area */
+}
+
+#reactionBack {
+  top: -20%; /* Moves the Back button above the game area */
 }

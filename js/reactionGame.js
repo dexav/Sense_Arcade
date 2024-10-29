@@ -10,8 +10,29 @@ startButton.addEventListener("click", () => {
 });
 
 function startReactionGame() {
-  const areaWidth = reactionGameArea.clientWidth;
-  const areaHeight = reactionGameArea.clientHeight;
+  reactionGameArea.style.backgroundColor = "red"; // Set the area to red initially
 
-  startTime = new Date().getTime();
+  const randomDelay = Math.floor(Math.random() * 3000) + 2000; // Random delay between 1 and 3 seconds
+  setTimeout(() => {
+    reactionGameArea.style.backgroundColor = "green"; // Turn green after the delay
+    startTime = new Date().getTime(); // Start the timer
+
+    reactionGameArea.addEventListener("click", stopReactionGame); // Add click event listener
+  }, randomDelay);
+}
+
+function stopReactionGame() {
+  if (reactionGameArea.style.backgroundColor === "green") {
+    endTime = new Date().getTime(); // Stop the timer
+    const reactionTime = endTime - startTime;
+    reactionTimeDisplay.textContent = `Reaction Time: ${reactionTime} ms`;
+
+    if (reactionTime < reactionHighscore) {
+      reactionHighscore = reactionTime;
+      highscoreDisplay.textContent = `Highscore: ${reactionHighscore} ms`;
+    }
+
+    reactionGameArea.style.backgroundColor = "red"; // Reset the area color to red
+    reactionGameArea.removeEventListener("click", stopReactionGame);
+  }
 }

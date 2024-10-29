@@ -23,7 +23,6 @@ document.addEventListener("DOMContentLoaded", () => {
     reactionBlock.style.display = "flex";
     catchCatBlock.style.display = "none";
     document.querySelector(".selectGame").style.display = "none";
-    startReactionGame(); // Funktion für das Reaktionsspiel
   });
 });
 
