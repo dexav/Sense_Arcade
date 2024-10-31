@@ -25,11 +25,11 @@ function stopReactionGame() {
   if (reactionGameArea.style.backgroundColor === "green") {
     endTime = new Date().getTime(); // Stop the timer
     const reactionTime = endTime - startTime;
-    reactionTimeDisplay.textContent = `Reaction Time: ${reactionTime} ms`;
+    reactionTimeDisplay.textContent = `${reactionTime}`;
 
     if (reactionTime < reactionHighscore) {
       reactionHighscore = reactionTime;
-      highscoreDisplay.textContent = `Highscore: ${reactionHighscore} ms`;
+      highscoreDisplay.textContent = `${reactionHighscore}`;
     }
 
     reactionGameArea.style.backgroundColor = "red"; // Reset the area color to red

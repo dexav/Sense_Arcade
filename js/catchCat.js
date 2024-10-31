@@ -15,9 +15,8 @@ function catchGame() {
   const areaHeight = catchCatBlock.clientHeight; // Höhe des Fangspiel-Bereichs
 
   // Generiere eine zufällige Position innerhalb des Fangspiel-Bereichs
-  const randomX = Math.random() * (areaWidth - 200); 
-  const randomY = Math.random() * (areaHeight - 200); 
-
+  const randomX = Math.random() * (areaWidth - 200);
+  const randomY = Math.random() * (areaHeight - 200);
 
   // Setze die Position des Bildes
   catImage.style.position = "absolute"; // Stelle sicher, dass das Bild absolut positioniert ist

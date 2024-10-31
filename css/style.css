@@ -8,6 +8,7 @@
 main {
   background-color: var(--back);
 }
+
 .selectGame {
   display: flex;
   justify-content: center;
@@ -23,7 +24,9 @@ main {
   margin: 10px;
   border-radius: 10px;
 }
-
+#catchBack,
+#catchStart {
+}
 #centerCatBlock {
   display: flex;
   justify-content: center;
@@ -51,12 +54,13 @@ main {
 }
 
 #catchCatImage img {
-  position: absolute; /* Stelle sicher, dass das Bild absolut positioniert ist */
-  cursor: pointer; /* Zeige einen Zeiger an, wenn man über das Bild fährt */
+  position: absolute;
+  cursor: pointer;
 }
 
 /* Styling for reactiongame */
-.reactionBlock {
+.reactionBlock,
+.reactionVariationBlock {
   display: flex;
   background-color: var(--back);
   justify-content: center;
@@ -79,19 +83,29 @@ main {
 }
 
 #startReactionButton,
-#reactionBack {
+#reactionBack button {
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px;
   height: 10vh;
   width: 10vw;
+  transition: background-color 0.3s ease, color 0.3s ease, border 0.3s ease;
+}
+
+#startReactionButton:hover,
+#reactionBack button:hover {
+  background-color: var(--back);
+  color: var(--reactBack);
+  border: 2px solid var(--reactBack);
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 #startReactionButton {
-  bottom: -20%; /* Moves the Start button below the game area */
+  bottom: -20%;
 }
 
 #reactionBack {
-  top: -20%; /* Moves the Back button above the game area */
+  top: -20%;
 }
