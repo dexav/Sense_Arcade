@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
   const reactionGo = document.getElementById("reactionGo");
   const catchStart = document.getElementById("catchStart");
 
+  catchCatBlock.style.display = "none";
+  reactionBlock.style.display = "none";
+
   catchCatGo.addEventListener("click", () => {
     catchCatBlock.style.display = "flex";
     reactionBlock.style.display = "none";

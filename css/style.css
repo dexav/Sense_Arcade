@@ -8,13 +8,18 @@
 main {
   background-color: var(--back);
 }
-
+body{
+  overflow: hidden;
+}
+.catchCatBlock, .reactionBlock {
+  display: none;
+}
 .selectGame {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-  height: 100vh;
+  height: 100vh;  
   list-style: none;
   border: black 1px solid;
 }
@@ -23,9 +28,6 @@ main {
   padding: 10px;
   margin: 10px;
   border-radius: 10px;
-}
-#catchBack,
-#catchStart {
 }
 #centerCatBlock {
   display: flex;
