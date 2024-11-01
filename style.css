@@ -8,6 +8,7 @@
 main {
   background-color: var(--back);
 }
+
 body{
   overflow: hidden;
 }
@@ -58,6 +59,8 @@ body{
 #catchCatImage img {
   position: absolute;
   cursor: pointer;
+  transform: scale(0.3);
+
 }
 
 /* Styling for reactiongame */

@@ -13,8 +13,9 @@ function catchGame() {
   const areaWidth = catchCatBlock.clientWidth;
   const areaHeight = catchCatBlock.clientHeight;
 
-  const randomX = Math.random() * (areaWidth - 200);
-  const randomY = Math.random() * (areaHeight - 200);
+  const randomX = Math.random() * (areaWidth - 500);
+  const randomY = Math.random() * (areaHeight - 500);
+
 
   catImage.style.position = "absolute";
   catImage.style.left = randomX + "px";
@@ -37,8 +38,9 @@ function catchGameForCat(cat) {
   const areaWidth = catchCatBlock.clientWidth;
   const areaHeight = catchCatBlock.clientHeight;
 
-  const randomX = Math.random() * (areaWidth - 200);
-  const randomY = Math.random() * (areaHeight - 200);
+  const randomX = Math.random() * (areaWidth - 500);
+  const randomY = Math.random() * (areaHeight - 500);
+
 
   cat.style.left = randomX + "px";
   cat.style.top = randomY + "px";
