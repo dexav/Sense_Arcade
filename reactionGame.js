@@ -10,21 +10,21 @@ startButton.addEventListener("click", () => {
 });
 
 function startReactionGame() {
-  reactionGameArea.style.backgroundColor = "red"; // Set the area to red initially
+  reactionGameArea.style.backgroundColor = "red"; 
 
-  const randomDelay = Math.floor(Math.random() * 3000) + 2000; // Random delay between 1 and 3 seconds
+  const randomDelay = Math.floor(Math.random() * 3000) + 2000; 
   setTimeout(() => {
-    reactionGameArea.style.backgroundColor = "green"; // Turn green after the delay
-    startTime = new Date().getTime(); // Start the timer
+    reactionGameArea.style.backgroundColor = "green"; 
+    startTime = new Date().getTime(); 
 
-    reactionGameArea.addEventListener("click", stopReactionGame); // Add click event listener
+    reactionGameArea.addEventListener("click", stopReactionGame); 
   }, randomDelay);
 }
 
 function stopReactionGame() {
   if (reactionGameArea.style.backgroundColor === "green") {
-    endTime = new Date().getTime(); // Stop the timer
-    const reactionTime = endTime - startTime;
+    endTime = new Date().getTime(); 
+    const reactionTime = endTime - startTime;               // Die Logik wie man die Zeit misst wurde mit Hilfe von ChatGPT erstellt
     reactionTimeDisplay.textContent = `${reactionTime}`;
 
     if (reactionTime < reactionHighscore) {
@@ -32,7 +32,7 @@ function stopReactionGame() {
       highscoreDisplay.textContent = `${reactionHighscore}`;
     }
 
-    reactionGameArea.style.backgroundColor = "red"; // Reset the area color to red
+    reactionGameArea.style.backgroundColor = "red"; 
     reactionGameArea.removeEventListener("click", stopReactionGame);
   }
 }

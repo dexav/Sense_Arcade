@@ -19,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     catchCatBlock.style.display = "flex";
     document.querySelector(".selectGame").style.display = "none";
     document.getElementById("catchCatImage").style.display = "block";
-    startCatchGame(); // Funktion für das Fang
+    startCatchGame(); 
   });
 
   reactionGo.addEventListener("click", () => {
@@ -29,8 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-document
-  .querySelectorAll("#catchBack button, #reactionBack button")
+document.querySelectorAll("#catchBack button, #reactionBack button")
   .forEach((button) => {
     button.addEventListener("click", () => {
       document.querySelector(".catchCatBlock").style.display = "none";

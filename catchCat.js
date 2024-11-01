@@ -22,7 +22,9 @@ function catchGame() {
   catImage.style.top = randomY + "px";
 }
 
-function spawnAdditionalCat() {
+
+// Die Funkionen spawnAdditionalCat und catchGameForCat wurde mit hilfe von ChatGPT erstellt
+function spawnAdditionalCat() {                   
   const additionalCat = catImage.cloneNode(true);
   additionalCat.addEventListener("click", () => {
     score++;
