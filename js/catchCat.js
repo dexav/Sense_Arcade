@@ -1,6 +1,5 @@
 let score = 0;
 let timerInterval;
-
 const catchCatBlock = document.querySelector(".catchCatBlock");
 const catScore = document.getElementById("catchScore");
 const catImage = document.getElementById("catchCatImage");
@@ -11,17 +10,38 @@ let highscore = localStorage.getItem("catchHighscore") || 0;
 catchHighscore.textContent = "Highscore: " + highscore;
 
 function catchGame() {
-  const areaWidth = catchCatBlock.clientWidth; // Breite des Fangspiel-Bereichs
-  const areaHeight = catchCatBlock.clientHeight; // Höhe des Fangspiel-Bereichs
+  const areaWidth = catchCatBlock.clientWidth;
+  const areaHeight = catchCatBlock.clientHeight;
 
-  // Generiere eine zufällige Position innerhalb des Fangspiel-Bereichs
   const randomX = Math.random() * (areaWidth - 200);
   const randomY = Math.random() * (areaHeight - 200);
 
-  // Setze die Position des Bildes
-  catImage.style.position = "absolute"; // Stelle sicher, dass das Bild absolut positioniert ist
-  catImage.style.left = randomX + "px"; // Setze die X-Koordinate
-  catImage.style.top = randomY + "px"; // Setze die Y-Koordinate
+  catImage.style.position = "absolute";
+  catImage.style.left = randomX + "px";
+  catImage.style.top = randomY + "px";
+}
+
+function spawnAdditionalCat() {
+  const additionalCat = catImage.cloneNode(true);
+  additionalCat.addEventListener("click", () => {
+    score++;
+    catScore.textContent = "Score: " + score;
+    catchGameForCat(additionalCat);
+  });
+
+  catchCatBlock.appendChild(additionalCat);
+  catchGameForCat(additionalCat);
+}
+
+function catchGameForCat(cat) {
+  const areaWidth = catchCatBlock.clientWidth;
+  const areaHeight = catchCatBlock.clientHeight;
+
+  const randomX = Math.random() * (areaWidth - 200);
+  const randomY = Math.random() * (areaHeight - 200);
+
+  cat.style.left = randomX + "px";
+  cat.style.top = randomY + "px";
 }
 
 function startCatchGame() {
@@ -29,34 +49,35 @@ function startCatchGame() {
   timer.textContent = "Time: " + gameTime;
   catScore.textContent = "Score: " + score;
   catchGame();
-  while (true) {
-    timerInterval = setInterval(() => {
-      gameTime--;
-      timer.textContent = "Time: " + gameTime;
-      console.log(gameTime);
-      if (gameTime === 0) {
-        clearInterval(timerInterval);
-        catImage.style.display = "none";
-        alert("Game Over! Your Score: " + score);
-        if (score > highscore) {
-          highscore = score;
-          console.log(highscore);
-          catchHighscore.textContent = "Highscore: " + highscore;
-          localStorage.setItem("catchHighscore", highscore);
-        }
-        score = 0;
-        catScore.textContent = "Score: " + score;
+
+  timerInterval = setInterval(() => {
+    gameTime--;
+    timer.textContent = "Time: " + gameTime;
+
+    if (gameTime === 20) {
+      spawnAdditionalCat();
+    }
+
+    if (gameTime === 0) {
+      clearInterval(timerInterval);
+      document.querySelectorAll(".catchCatBlock img").forEach(cat => cat.remove());
+      alert("Game Over! Your Score: " + score);
+
+      if (score > highscore) {
+        highscore = score;
+        catchHighscore.textContent = "Highscore: " + highscore;
+        localStorage.setItem("catchHighscore", highscore);
       }
-    }, 1000);
-    break;
-  }
+      score = 0;
+      catScore.textContent = "Score: " + score;
+    }
+  }, 1000);
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   catImage.addEventListener("click", () => {
-    score++; // Erhöhe den Score
-    catScore.textContent = "Score: " + score; // Aktualisiere den Highscore
-
-    catchGame(); // Bewege das Bild erneut an eine zufällige Position
+    score++;
+    catScore.textContent = "Score: " + score;
+    catchGame();
   });
 });
