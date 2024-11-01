@@ -6,7 +6,7 @@ Nursiwat Xavier
 | ----- | ------- | ------------------------------------------------------------ |
 | 23/08/2024       | 0.0.1   | Ich habe das Projekt angefangen, die HTML/CSS Grundstruktur fertiggestellt und auf GitHub alles eingerichtet. |
 | 30/08/2024      | 0.0.2     | Ich habe angefangen mit dem Fangspiel zu implementieren. Ich bin aber nicht weit gekommen, also muss ich dieses Arbeitspaket auf nächste Woche veschieben um daran weiter zu arbeiten.                                                             |
-| 06/09/2024      |0.0.3   |  Ich habe die Grundfunktion des Fangspiels fertig implementiert. Der Highscore funktioniert noch nicht, also muss ich das auch auf nächste Woche verschieben.                                                            |
+| 06/09/2024      |0.0.3   |  Ich habe die Grundfunktion des Fangspiels fertig implementiert. Der Highscore funktioniert noch nicht, also muss ich das auch auf nächste Woche verschieben.                                                         
 |13/09/2024|0.1.0| Fangspiel wurde komplett fertig implementiert. Heisst Highscore, UI wurde noch erstellt. |
 
 ## 1 Informieren
@@ -23,7 +23,7 @@ Das andere Spiel ist ein Reaktion-tester, wo man seine Reaktionszeit herausfinde
 
 | US-№ | Verbindlichkeit | Typ  | Beschreibung                       |
 | ---- | --------------- | ---- | ---------------------------------- |
-| 1    |funktional       | muss | Als User will ich, dass das Fang-Spiel einen Timer hat, der runterzählt, damit man nur in einer bestimmten Zeit spielen kann und nicht unendlich.                                 |
+| 1    |funktional       | muss | Als User will ich, dass das Fang-Spiel einen Timer hat, der runterzählt, damit man nur in einer bestimmten Zeit spielen kann und nicht unendlich.  |
 | 2    |funktional        | muss | Als User will ich, dass im Fang-Spiel die Bilder die aufpoppen, nach einer Zeit mehr wird, damit man nicht warten muss bis man ein Bild gedrückt hat.                         |
 |3|qulität|muss|Als User will ich, dass das UI simpel und einfach gestaltet ist, damit auch eine Person die keine Ahnung herausfindet wie man navigiert. |
 |4|funktional|muss|Als User will ich, dass im Reaktiontester die Zeit, wo es von Rot auf Grün wechselt, jedes mal anders ist, damit man nicht rechnen kann wann man auf dem Bildschirm drücken muss. |
@@ -36,8 +36,12 @@ Das andere Spiel ist ein Reaktion-tester, wo man seine Reaktionszeit herausfinde
 
 | TC-№ | Ausgangslage | Eingabe | Erwartete Ausgabe |
 | ---- | ------------ | ------- | ----------------- |
-| 1.1  |              |         |                   |
-| ...  |              |         |                   |
+| 1.1  | Das Fang-Spiel wurde gestartet und das Spiel läuft.             | User spielt das Spiel und klickt auf die Katzen.       |   Es gibt einen Timer der von 30 runterzählt.                |
+| 2.1  | Das Fang-Spiel wurde gestartet und das Spiel läfut          |  User spielt das Spiel und klickt auf die Katzen.       | Wenn der Timer bei 20 Sekunden angekommen ist, kommen mehr Katzen auf dem Bildschirm|
+| 3.1  | Der Reaktionstester wurde gestartet.             | User hat auf Start gedrückt         | Der rote Bereich wechselt nach 2.3 Sekunden auf grün.                |
+| 3.2  | Der Reaktionstester wurde gestartet.             |  User hat auf Start gedrückt       | Der rote Bereich wechselt nach 3.1 Sekunden auf grün.                  |
+| 4.1  | Es gibt eine neue Variation von dem Reaktionstester.             | User beginnt die neue Varation.         |  Auf dem roten Bereich wird jetzt nur noch ein Teil der Fläche grün.                 |
+
 
 
 
@@ -66,11 +70,16 @@ Total:  1080 min / 18 h
 
 | AP-№ | Datum | Zuständig | geplante Zeit | tatsächliche Zeit |
 | ---- | ----- | --------- | ------------- | ----------------- |
-| 1.A  |  23/08/2024     |Xavier Nursiwat           | 90 min              |  110 min                 |
-| 2.A  |  30/08/2024 + 06/09/2024     | Xavier Nursiwat             | 135min              |    300 min               |
-|2.B |  13/09/2024   | Xavier Nursiwat             | 45 min            |    100min               |
-| 3.A  | 06/09/2024        | Xavier Nursiwat          | 90 min       |120 min         |
+| 1.A  |  23.08.2024     |Xavier Nursiwat           | 90 min              |  110 min                 |
+| 2.A  |  30.08.2024 + 06/09/2024     | Xavier Nursiwat             | 135min              |    300 min               |
+|2.B |  13.09.2024   | Xavier Nursiwat             | 45 min            |    100min               |
+| 3.A  | 06.09.2024        | Xavier Nursiwat          | 90 min       |120 min         |
 | 3.B  | 06.09.2024        | Xavier Nursiwat          |  90 min     | 90 min              |
+| 4.A  | 13.09.2024        | Xavier Nursiwat          |  135 min     | 160 min              |
+|6.A  |  27.09.2024        | Xavier Nursiwat          |  45 min     | 60 min              |
+| 7.A  | 27.09.2024        | Xavier Nursiwat          |  135 min     | 140 min              |
+| 8.A  | 01.11.2024        | Xavier Nursiwat          |  180 min     | 200 min              |
+
 
 
 
@@ -81,12 +90,12 @@ Total:  1080 min / 18 h
 
 | TC-№ | Datum | Resultat | Tester |
 | ---- | ----- | -------- | ------ |
-| 1.1  |       |          |        |
-| ...  |       |          |        |
+| 1.1  |  01.11.2024     | OK          |Xavier Nursiwat        |
+| 2.1  |  01.11.2024       | OK         |Xavier Nursiwat        |
+| 3.1  |  01.11.2024       |   OK       | Xavier Nursiwat       |
+| 3.2  |  01.11.2024      |  OK        | Xavier Nursiwat       |
+| 4.1  |  01.11.2024       | NOK         | Xavier Nursiwat       |
 
-✍️ Vergessen Sie nicht, ein Fazit hinzuzufügen, welches das Test-Ergebnis einordnet.
+Fazit: Man kann beide Spiele ohne Probleme spielen. Da die Variation zum Reaktionstester nicht fertiggestellt wurde, kann man sie daher nicht spielen. 
 
-## 6 Auswerten
-
-✍️ Fügen Sie hier eine Verknüpfung zu Ihrem Lern-Bericht ein.
 
