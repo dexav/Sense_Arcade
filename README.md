@@ -8,6 +8,8 @@ Nursiwat Xavier
 | 30/08/2024      | 0.0.2     | Ich habe angefangen mit dem Fangspiel zu implementieren. Ich bin aber nicht weit gekommen, also muss ich dieses Arbeitspaket auf nächste Woche veschieben um daran weiter zu arbeiten.                                                             |
 | 06/09/2024      |0.0.3   |  Ich habe die Grundfunktion des Fangspiels fertig implementiert. Der Highscore funktioniert noch nicht, also muss ich das auch auf nächste Woche verschieben.                                                         
 |13/09/2024|0.1.0| Fangspiel wurde komplett fertig implementiert. Heisst Highscore, UI wurde noch erstellt. |
+|01/11/2024|1.0.0| Beide Spiele wurden komplett fertiggestellt. Die Website wurde deployed und ist zugänglich für alle.|
+
 
 ## 1 Informieren
 
@@ -64,7 +66,8 @@ Das andere Spiel ist ein Reaktion-tester, wo man seine Reaktionszeit herausfinde
 Total:  1080 min / 18 h
 
 ## 3 Entscheiden
-
+Bild, welches ich benutze habe für das Fangspiel:
+https://images.app.goo.gl/hx6ZPRqYJ3jcYf1R7
 
 ## 4 Realisieren
 
@@ -79,8 +82,6 @@ Total:  1080 min / 18 h
 |6.A  |  27.09.2024        | Xavier Nursiwat          |  45 min     | 60 min              |
 | 7.A  | 27.09.2024        | Xavier Nursiwat          |  135 min     | 140 min              |
 | 8.A  | 01.11.2024        | Xavier Nursiwat          |  180 min     | 200 min              |
-
-
 
 
 
