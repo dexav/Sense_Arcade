@@ -10,6 +10,7 @@ Nursiwat Xavier
 |13/09/2024|0.1.0| Fangspiel wurde komplett fertig implementiert. Heisst Highscore, UI wurde noch erstellt. |
 |01/11/2024|1.0.0| Beide Spiele wurden komplett fertiggestellt. Die Website wurde deployed und ist zugänglich für alle.|
 
+link: https://dexav.github.io/Sense_Arcade/
 
 ## 1 Informieren
 
